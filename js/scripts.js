@@ -24,4 +24,9 @@ var pokemonList = [
   creatureTypes : ['Monster', 'Water  1'],
 }
 ]
-console.log(pokemonList)
+for ( let i = 0; i < pokemonList.length; i++) {
+  document.write('<h2>' + pokemonList[i].creatureName + '</h2>' + ' Height: ' + pokemonList[i].creatureHeight)
+if (pokemonList[i].creatureHeight >= 4.07) {
+  document.write(' (Wow that\'s big!)' )
+  }
+}
