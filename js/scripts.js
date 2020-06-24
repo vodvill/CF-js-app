@@ -22,11 +22,7 @@ var pokemonList = [
   creatureHeight : 0.5,
   creatureAbilities : ['Rain-dish', 'Torrent'],
   creatureTypes : ['Monster', 'Water  1'],
-}
-]
-for ( let i = 0; i < pokemonList.length; i++) {
-  document.write('<h2>' + pokemonList[i].creatureName + '</h2>' + ' Height: ' + pokemonList[i].creatureHeight)
-if (pokemonList[i].creatureHeight >= 4.07) {
-  document.write(' (Wow that\'s big!)' )
-  }
-}
+},
+];
+
+pokemonList.forEach(element => console.log(element));
